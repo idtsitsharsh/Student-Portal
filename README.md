@@ -1,40 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+Student Portal Dashboard
+This is a student portal dashboard built using Next.js and Tailwind CSS. The dashboard displays various sections such as a welcome banner, upcoming tests, attempted tests, and a left sidebar navigation menu.
 
-## Getting Started
+Features
+Left Sidebar Navigation: Contains links for Tests, Announcements, Profile, and Schedule.
+Welcome Banner: Displays a personalized welcome message and a 3D avatar.
+Upcoming Tests: A section that shows the list of upcoming tests with subject names and dates.
+Attempted Tests: Displays previously attempted tests with scores and time taken.
+Tech Stack
+Next.js: React framework for building the application.
+Tailwind CSS: Utility-first CSS framework for styling.
+Lucide Icons: Provides modern, open-source icons used in the sidebar.
+Project Structure
+bash
+Copy
+Edit
+/src
+├── app
+│   ├── layout.js
+│   └── page.js
+├── components
+│   ├── LeftSidebar.js
+│   ├── UpcomingTestCards.js
+│   ├── AttemptedTestSection.js
+│   └── WelcomeBanner.js
+└── styles
+    └── globals.css
+src/app/
+layout.js: Main layout of the application.
+page.js: Main page that renders the dashboard.
+src/components/
+LeftSidebar.js: Sidebar with navigation links.
+UpcomingTestCards.js: Displays upcoming tests.
+AttemptedTestSection.js: Displays attempted tests.
+WelcomeBanner.js: Displays a welcome message and avatar.
+src/styles/
+globals.css: Global styles used across the app.
+Installation
+Clone the repository to your local machine:
 
-First, run the development server:
+bash
+Copy
+Edit
+git clone <repository_url>
+Navigate into the project directory:
 
-```bash
+bash
+Copy
+Edit
+cd <project_directory>
+Install the necessary dependencies:
+
+bash
+Copy
+Edit
+npm install
+Configure Tailwind CSS: Ensure that the tailwind.config.js file is set up correctly to point to your src directory for CSS purging. Example:
+
+js
+Copy
+Edit
+module.exports = {
+  content: [
+    './src/**/*.{js,ts,jsx,tsx}', // Make sure to include the src folder
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+Create a .env.local file to store any local environment variables (if needed).
+
+Running the Project
+Run the development server:
+
+bash
+Copy
+Edit
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open your browser and go to:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+arduino
+Copy
+Edit
+http://localhost:3000
+Folder Structure
+src/: Contains all the source code for the application.
+components/: Reusable components for the dashboard.
+styles/: Tailwind CSS configuration and global styles.
+app/: The core of the application, including the main page and layout.
+Customizing the Dashboard
+You can modify the following sections to suit your needs:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+LeftSidebar.js: Update the navigation items and icons.
+UpcomingTestCards.js: Modify the test details such as name, date, and subject.
+AttemptedTestSection.js: Add or remove attempted tests and their scores.
+WelcomeBanner.js: Update the avatar and the welcome message.
+Contribution
+Feel free to fork this repository and contribute to improving the dashboard. If you have any suggestions or improvements, open an issue or submit a pull request.
