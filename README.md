@@ -5,7 +5,7 @@ This is a student portal dashboard built using Next.js and Tailwind CSS. The das
 ## Features
 
 - **Left Sidebar Navigation**: Contains links for Tests, Announcements, Profile, and Schedule.
-- **Welcome Banner**: Displays a personalized welcome message and a 3D avatar.
+- **Welcome Banner**: Displays a personalized welcome message.
 - **Upcoming Tests**: A section that shows the list of upcoming tests with subject names and dates.
 - **Attempted Tests**: Displays previously attempted tests with scores and time taken.
   
