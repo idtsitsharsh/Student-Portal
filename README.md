@@ -1,7 +1,3 @@
-Here's a `README.md` file that you can use for your Next.js project. It includes details about the project, how to set it up, and how to run it.
-
----
-
 # Student Portal Dashboard
 
 This is a student portal dashboard built using Next.js and Tailwind CSS. The dashboard displays various sections such as a welcome banner, upcoming tests, attempted tests, and a left sidebar navigation menu.
@@ -118,7 +114,3 @@ You can modify the following sections to suit your needs:
 ## Contribution
 
 Feel free to fork this repository and contribute to improving the dashboard. If you have any suggestions or improvements, open an issue or submit a pull request.
-
----
-
-This `README.md` should help others understand how to use your project and how to set it up. If you need any further details or modifications, feel free to ask!
